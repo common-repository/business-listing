@@ -1,0 +1,201 @@
+/** Style Sheet
+ * @Package			Business Listing WP Plugin
+ * @File				business-listing.css
+ * @Author			Chris Hood (http://chrishood.me)
+ * @Link				https://onthegridwebdesign.com
+ * @copyright		(c) 2015-2024, On the Grid Web Design LLC
+ * @created			4/23/15
+*/
+
+/***** Shortcode *****/
+/*** Butttons ***/
+.otgblist_buttons {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 0 21px;
+}
+
+.otgblist_region_buttons, .otgblist_cat_buttons {
+	flex: 1;
+	vertical-align: top;
+	min-width: 270px;
+	text-align: center;
+}
+.otgblist_region_buttons p, .otgblist_cat_buttons p {
+   font-size: 1.5em;
+   font-weight: bold;
+	margin: 0 12px 9px !important;
+}
+.otgblist_region_buttons button, .otgblist_cat_buttons button {
+	box-sizing: content-box;
+   min-width: 100px;
+   height: 31px;
+   margin: 3px 6px;
+	padding: 3px 7px;
+	border-radius: 7px;
+   background: #206820;
+   color: #eee;
+   font-weight: bold;
+}
+
+.otgblist_region_buttons button.otgblist_active, .otgblist_cat_buttons button.otgblist_active {
+   background: #2b904e;
+   color: white;
+}
+/*** Listing Box ***/
+div.otgblist_box {
+	display: inline-block;
+	vertical-align: top;
+	width: 250px;
+	height: 320px;
+	margin: 5px;
+	padding: 0;
+	border-radius: 7px;
+	background: #333;
+	text-align: center;
+	overflow: hidden;
+}
+.otgblist_box_img_outer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+	box-shadow: none !important;
+	vertical-align: middle;
+	line-height: 200px;
+}
+.otgblist_box img {
+	width: 100%;
+}
+
+.otgblist_box p {
+	padding: 9px 12px 0;
+	line-height: 22px;
+	color: white;	
+}
+.otgblist_box_text {
+	color: white !important;
+	text-decoration: none;
+}
+
+/***** Admin *****/
+.otgblist_success, .otgblist_error, .otgblist_warning, .otgblist_message {
+	display: block;
+	margin: 12px -10px;
+	padding: 7px 35px;
+	color: #111111;
+	font-weight: bold;
+}
+.otgblist_success {
+	background-color: #55ee55;
+	border-bottom: solid 2px #007700;
+}
+.otgblist_error {
+	background-color: #ee5555;
+	border-bottom: solid 2px #770000;
+}
+.otgblist_warning {
+	background-color: #eeee55;
+	border-bottom: solid 2px #777700;
+}
+.otgblist_message {
+	background-color: #5555ee;
+	border-bottom: solid 2px #000077;
+	color: #f6f6f6;
+}
+
+.otgblist_form1 label {
+	display: inline-block;
+	vertical-align: top;
+	width: 150px;
+	padding: 0 6px;
+	text-align: right;
+	font-weight: bold;
+}
+
+.otgblist_form1 select, .otgblist_form1 input:not([type=checkbox]):not([type=radio]):not([type=submit]):not([type=button]):not(.otgblist_colorpicker) {
+	width: 300px;
+	padding: 3px 5px;
+	border-radius: 3px;
+}
+.otgblist_form1 textarea {
+	width: 400px;
+	height: 200px;
+	padding: 3px 5px;
+	border-radius: 3px;
+}
+
+.otgblist_about {
+	position: sticky;
+	float: right;
+	max-width: 300px;
+	padding: 9px 17px 9px 31px;
+}
+@media screen and (max-width: 800px) {
+	.otgblist_about {	
+		position: inherit;
+		float: none;
+		display: block;
+		padding: 9px 12px;
+	}
+}
+
+#otgblist_listing_image {
+	display: inline-block;
+	vertical-align: top;
+	margin: 31px;
+	width: 150px;
+	height: 150px;
+	box-shadow: 4px 4px 4px #555;
+}
+
+.otgblist_rename_on {
+	display: none;
+}
+
+/*** Datatables ***/
+.otgblist_table1 {
+	margin: 7px 10px 12px;
+	border-collapse: collapse;
+}
+
+.otgblist_table1 thead {
+	background-color: #4c4c4c;
+	background: linear-gradient(to bottom,  #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%);
+	text-align: center;
+	color: #eee;
+}
+.otgblist_table1 th {
+	padding: 6px 12px;
+	text-align: center !important;
+}
+.otgblist_table1 th a {
+	color: #fff;
+}
+
+.otgblist_table1 td {
+	margin: 0;
+	padding: 5px 12px;
+	text-align: center;
+}
+.otgblist_table1 .even {
+	background-color: #aaa;
+}
+.otgblist_table1 .odd {
+	background-color: #ddd;
+}
+.otgblist_table1 .odd:hover, .table1 .even:hover {
+	background: #fff;
+}
+.dataTables_filter {
+	margin-bottom: 7px;	
+}
+.dataTables_filter input {
+	background-color: white !important;
+}
+.dataTables_length select {
+	min-width: 75px;
+	background-color: white !important;
+}
